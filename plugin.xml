@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="myket-iab-cordova-plugin"
+    version="3.0.2">
+
+    <name>Android InAppBilling</name>
+    <description>Use this In-app Billing plugin to sell digital goods, including one-time items and recurring subscriptions from your Cordova application.</description>
+    
+    <author>Guillaume Charhon - Smart Mobile Software,Hadi Lashkari Ghouchani - Myket</author>
+    <keywords>myket,billing,in-app,inapp,purchase,credit</keywords>
+    <license>MIT</license>
+
+    <engines>
+      <engine name="cordova" version=">=3.0.0" />
+    </engines>
+	
+    <!-- android -->
+    <platform name="android">
+
+        <js-module src="www/inappbilling.js" name="InAppBillingPlugin">
+            <clobbers target="inappbilling" />
+        </js-module>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <!-- InApp Billing -->
+            <uses-permission android:name="ir.mservices.market.BILLING" />
+        </config-file>
+
+        <!-- Cordova >= 3.0.0 -->
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="InAppBillingPlugin">   
+                    <param name="android-package" value="ir.myket.example.iab.InAppBillingPlugin"/>
+            </feature>
+        </config-file>
+
+        <!-- In-app Billing Library -->
+        <source-file src="src/com/android/vending/billing/IInAppBillingService.aidl" target-dir="src/com/android/vending/billing/" />
+
+        <!-- cordova plugin src files -->
+        <source-file src="src/ir/myket/example/iab/InAppBillingPlugin.java" target-dir="src/ir/myket/example/iab/" />
+        <source-file src="src/ir/myket/example/iab/Action.java" target-dir="src/ir/myket/example/iab/" />
+        
+                <source-file src="src/com/example/android/trivialdrivesample/util/Base64.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
+                <source-file src="src/com/example/android/trivialdrivesample/util/Base64DecoderException.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
+                <source-file src="src/com/example/android/trivialdrivesample/util/IabException.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
+                <source-file src="src/com/example/android/trivialdrivesample/util/IabHelper.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
+                <source-file src="src/com/example/android/trivialdrivesample/util/IabResult.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
+                <source-file src="src/com/example/android/trivialdrivesample/util/Inventory.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
+                <source-file src="src/com/example/android/trivialdrivesample/util/Purchase.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
+                <source-file src="src/com/example/android/trivialdrivesample/util/Security.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
+                <source-file src="src/com/example/android/trivialdrivesample/util/SkuDetails.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
+        
+    </platform>
+</plugin>
