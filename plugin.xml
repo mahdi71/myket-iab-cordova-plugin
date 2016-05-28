@@ -25,7 +25,7 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <!-- InApp Billing -->
-            <uses-permission android:name="ir.mservices.market.BILLING" />
+            <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
         </config-file>
 
         <!-- Cordova >= 3.0.0 -->
