@@ -35,22 +35,11 @@
             </feature>
         </config-file>
 
-        <!-- In-app Billing Library -->
-        <source-file src="src/com/android/vending/billing/IInAppBillingService.aidl" target-dir="src/com/android/vending/billing/" />
-
         <!-- cordova plugin src files -->
-        <source-file src="src/ir/myket/example/iab/InAppBillingPlugin.java" target-dir="src/ir/myket/example/iab/" />
-        <source-file src="src/ir/myket/example/iab/Action.java" target-dir="src/ir/myket/example/iab/" />
-        
-                <source-file src="src/com/example/android/trivialdrivesample/util/Base64.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
-                <source-file src="src/com/example/android/trivialdrivesample/util/Base64DecoderException.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
-                <source-file src="src/com/example/android/trivialdrivesample/util/IabException.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
-                <source-file src="src/com/example/android/trivialdrivesample/util/IabHelper.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
-                <source-file src="src/com/example/android/trivialdrivesample/util/IabResult.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
-                <source-file src="src/com/example/android/trivialdrivesample/util/Inventory.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
-                <source-file src="src/com/example/android/trivialdrivesample/util/Purchase.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
-                <source-file src="src/com/example/android/trivialdrivesample/util/Security.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
-                <source-file src="src/com/example/android/trivialdrivesample/util/SkuDetails.java" target-dir="src/com/example/android/trivialdrivesample/util/" />
+        <source-file src="src/ir/myket/example/iab/InAppBillingPlugin.java" target-dir="src/ir.bazaar.miladesign" />
+        <source-file src="src/ir/myket/example/iab/Action.java" target-dir="src/ir.bazaar.miladesign" />
+
+	<source-file src="src/com/MdBazaar.jar" target-dir="libs" />
         
     </platform>
 </plugin>
