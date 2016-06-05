@@ -4,14 +4,15 @@
  * @author Guillaume Charhon - Smart Mobile Software
  * @modifications Brian Thurlow 10/16/13
  */
-package ir.myket.example.iab;
+package ir.bazaar.miladesign;
 
 import android.content.Intent;
 import android.util.Log;
 
-import com.example.android.trivialdrivesample.util.IabHelper;
-import com.example.android.trivialdrivesample.util.IabResult;
-import com.example.android.trivialdrivesample.util.Inventory;
+import ir.bazaar.miladesign.utilfiles.IabHelper;
+import ir.bazaar.miladesign.utilfiles.IabResult;
+import ir.bazaar.miladesign.utilfiles.Inventory;
+
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
