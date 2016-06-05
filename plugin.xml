@@ -31,7 +31,7 @@
         <!-- Cordova >= 3.0.0 -->
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="InAppBillingPlugin">   
-                    <param name="android-package" value="ir.myket.example.iab.InAppBillingPlugin"/>
+                    <param name="android-package" value="ir.bazaar.miladesign.IAP"/>
             </feature>
         </config-file>
 
