@@ -1,12 +1,12 @@
-package ir.myket.example.iab;
+package ir.bazaar.miladesign;
 
 import android.util.Log;
 
-import com.example.android.trivialdrivesample.util.IabHelper;
-import com.example.android.trivialdrivesample.util.IabResult;
-import com.example.android.trivialdrivesample.util.Inventory;
-import com.example.android.trivialdrivesample.util.Purchase;
-import com.example.android.trivialdrivesample.util.SkuDetails;
+import ir.bazaar.miladesign.utilfiles.Purchase;
+import ir.bazaar.miladesign.utilfiles.IabHelper;
+import ir.bazaar.miladesign.utilfiles.IabResult;
+import ir.bazaar.miladesign.utilfiles.Inventory;
+import ir.bazaar.miladesign.utilfiles.SkuDetails;
 
 import org.apache.cordova.CallbackContext;
 import org.json.JSONArray;
